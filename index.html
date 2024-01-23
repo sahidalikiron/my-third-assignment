@@ -42,8 +42,49 @@
 <body class="font-manrope">
     <!-- header section -->
     <header>
-        <section class="container px-4 lg:max-w-6xl my-5 lg:mx-auto">
-            <div class="carousel rounded-2xl w-full">
+        <section class="container px-4 lg:max-w-6xl my-5 lg:relative lg:mx-auto">
+            <!-- navbar -->
+            <nav>
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu fa-solid-sm menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Pages</a></li>
+                                <li><a>Blog</a></li>
+                                <li><a>Contact</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey <span
+                                class="text-[#FF4240] lg:text-4xl font-extrabold">’</span> s</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end gap-4">
+                        <i class="fa-solid fa-magnifying-glass hidden lg:flex"></i>
+                        <a class="btn bg-[#FF4240] text-white lg:text-xl font-bold">Get Ticket</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- slider section -->
+            <div class="carousel mt-3 lg:mt-8 rounded-2xl w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="./Images/1.png" class="w-full" />
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -73,6 +114,12 @@
                     </div>
                 </div>
         </section>
+        <div
+            class="mx-auto lg:max-w-6xl my-5 lg:mx-auto bg-[#131318] w-[90%] lg:w-[500px] lg:absolute right-24 -bottom-3 p-7 rounded-2xl">
+            <h3 class="text-white mb-2 text-lg lg:text-2xl font-extrabold">Meet all the heroes</h3>
+            <p class="text-[#FFFFFF99] font-medium"> A family 4 pack of Columbus Air Show tickets with parking pass is
+                available to win in our game day raffle! </p>
+        </div>
     </header>
 
     <!-- main section -->
@@ -122,12 +169,13 @@
         <section class="px-4 lg:max-w-6xl lg:mx-auto">
             <div class="text-center px-4 lg:px-52">
                 <h2 class="text-3xl lg:text-4xl font-extrabold mb-3">Program Sections</h2>
-                <p class="text-[#13131899]">For many, the jump from a Learn to Play program to in-house hockey can be a
+                <p class="text-[#13131899] mb-5">For many, the jump from a Learn to Play program to in-house hockey can
+                    be a
                     big one and that's where the Sharks Play On program comes in!</p>
             </div>
             <div class="grid lg:grid-cols-2 gap-4">
                 <div
-                    class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/2.png)]  bg-no-repeat py-12 lg:py-20 px-10 my-5 h-80 rounded-2xl">
+                    class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/2.png)]  bg-no-repeat py-12 lg:py-20 px-10 lg:my-5 h-80 rounded-2xl">
                     <h3 class="text-2xl lg:text-3xl text-white font-extrabold">Junior Program</h3>
                     <p class="text-white font-medium py-5">This program is for players that attend Lincoln Schools
                         in Grades 6 through Jr Warriors teams participate in the Valley
@@ -135,7 +183,7 @@
                     <button class="bg-[#FF4240] text-white text-xl font-bold rounded-lg p-3">Register Now!</button>
                 </div>
                 <div
-                    class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/3.png)] bg-no-repeat py-14 lg:py-20 px-10 my-5 h-80 rounded-2xl">
+                    class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/3.png)] bg-no-repeat py-14 lg:py-20 mb-5 px-10 lg:my-5 h-80 rounded-2xl">
                     <h3 class="text-2xl lg:text-3xl text-white font-extrabold">Teenager Program</h3>
                     <p class="text-white font-medium py-5">Our programs are designed to enable hockey players and
                         skaters to develop their individual skills in a fun and rewarding environment.</p>
@@ -152,6 +200,8 @@
                 <button class="bg-[#FF4240] text-white text-xl font-bold rounded-lg p-3">Register Now!</button>
             </div>
         </section>
+
+        <!-- new product section -->
 
         <!-- clients question section -->
         <section class="px-4 lg:max-w-6xl lg:mx-auto lg:py-24">
@@ -273,29 +323,35 @@
                     </div>
                 </div>
                 <div>
-                    <div  class="grid lg:grid-cols-2 gap-6">
+                    <div class="grid lg:grid-cols-2 gap-6">
                         <div>
                             <label class="text-xl font-bold" for="">Your Name</label><br>
-                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2" type="text" placeholder="Enter your full name">
+                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2" type="text"
+                                placeholder="Enter your full name">
                         </div>
                         <div>
                             <label class="text-xl font-bold" for="">Your Email</label><br>
-                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2" type="email" placeholder="Enter your email">
+                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2" type="email"
+                                placeholder="Enter your email">
                         </div>
                         <div>
                             <label class="text-xl font-bold" for="">Subject</label><br>
-                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2" type="text" placeholder="Enter your subject">
+                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2" type="text"
+                                placeholder="Enter your subject">
                         </div>
                         <div>
                             <label class="text-xl font-bold" for="">Phone Number</label><br>
-                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2 mb-4" type="text" placeholder="Enter your phone number">
+                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2 mb-4" type="text"
+                                placeholder="Enter your phone number">
                         </div>
                     </div>
                     <div>
                         <label class="text-xl font-bold" for="">Message</label><br>
-                        <textarea class="bg-[#13131808] w-[100%] lg:w-[670px] rounded-xl p-5 mt-2" name="" placeholder="Write your message" id="" cols="30" rows="10"></textarea>
+                        <textarea class="bg-[#13131808] w-[100%] lg:w-[670px] rounded-xl p-5 mt-2" name=""
+                            placeholder="Write your message" id="" cols="30" rows="10"></textarea>
                     </div>
-                    <button class="btn bg-[#FF4240] w-[100%] lg:w-[670px] text-white  text-xl font-bold mt-4">Send Message</button>
+                    <button class="btn bg-[#FF4240] w-[100%] lg:w-[670px] text-white  text-xl font-bold mt-4">Send
+                        Message</button>
                 </div>
             </div>
             <div class="my-12 text-center bg-[#13131808] py-9 rounded-xl">
@@ -312,39 +368,42 @@
     </main>
 
     <!-- footer section -->
-    <footer class="flex  justify-between flex-col lg:flex-row p-10 flex bg-[#131318]">
+    <footer class="flex justify-between flex-col lg:flex-row p-10 flex bg-[#131318]">
         <div>
             <h3 class="text-white text-3xl font-extrabold">Get In Touch</h3>
-            <p class="text-[#FFFFFF99] my-3 font-medium">Over the past three months I've emailed them,<br> texted their number from their website,<br> and have called them numerous times.</p>
-            <p class="flex items-center gap-2 text-[#FFFFFF99] font-medium"><i class="fa-regular fa-envelope text-red-600"></i>hockeys@support.com</p>
-            <p class="flex items-center gap-2 text-[#FFFFFF99] font-medium"><i class="fa-solid fa-phone text-red-600"></i>(+62) 123-321-543</p>
-        </div> 
+            <p class="text-[#FFFFFF99] my-3 font-medium">Over the past three months I've emailed them,<br> texted their
+                number from their website,<br> and have called them numerous times.</p>
+            <p class="flex items-center gap-2 text-[#FFFFFF99] font-medium"><i
+                    class="fa-regular fa-envelope text-red-600"></i>hockeys@support.com</p>
+            <p class="flex items-center gap-2 text-[#FFFFFF99] font-medium"><i
+                    class="fa-solid fa-phone text-red-600"></i>(+62) 123-321-543</p>
+        </div>
         <div class="flex justify-center gap-12 mt-3 lg:gap-40 flex-row">
             <div class="flex flex-col">
-                <h3 class="text-white text-lg font-bold">Company</h3> 
-              <a class="link link-hover text-[#FFFFFF99] font-medium">About Us</a>
-              <a class="link link-hover text-[#FFFFFF99] font-medium">Leadership</a>
-              <a class="link link-hover text-[#FFFFFF99] font-medium">Career</a>
-              <a class="link link-hover text-[#FFFFFF99] font-medium">News & Article</a>
-              <a class="link link-hover text-[#FFFFFF99] font-medium">Legal Notice</a>
-            </div> 
-            <div class="flex flex-col">
-                <h3 class="text-white text-lg font-bold">Support</h3> 
-              <a class="link link-hover text-[#FFFFFF99] font-medium">Help Center</a>
-              <a class="link link-hover text-[#FFFFFF99] font-medium">FAQ</a>
-              <a class="link link-hover text-[#FFFFFF99] font-medium">Ticket </a>
-              <a class="link link-hover text-[#FFFFFF99] font-medium">Contact Us</a>
+                <h3 class="text-white text-lg font-bold">Company</h3>
+                <a class="link link-hover text-[#FFFFFF99] font-medium">About Us</a>
+                <a class="link link-hover text-[#FFFFFF99] font-medium">Leadership</a>
+                <a class="link link-hover text-[#FFFFFF99] font-medium">Career</a>
+                <a class="link link-hover text-[#FFFFFF99] font-medium">News & Article</a>
+                <a class="link link-hover text-[#FFFFFF99] font-medium">Legal Notice</a>
             </div>
-        </div> 
+            <div class="flex flex-col">
+                <h3 class="text-white text-lg font-bold">Support</h3>
+                <a class="link link-hover text-[#FFFFFF99] font-medium">Help Center</a>
+                <a class="link link-hover text-[#FFFFFF99] font-medium">FAQ</a>
+                <a class="link link-hover text-[#FFFFFF99] font-medium">Ticket </a>
+                <a class="link link-hover text-[#FFFFFF99] font-medium">Contact Us</a>
+            </div>
+        </div>
         <div class="flex flex-col pl-[30%] lg:pl-0 mt-3">
-            <h3 class="text-white text-lg font-bold">Services</h3> 
+            <h3 class="text-white text-lg font-bold">Services</h3>
             <a class="link link-hover text-[#FFFFFF99] font-medium">Academy</a>
             <a class="link link-hover text-[#FFFFFF99] font-medium">Group Lesson</a>
             <a class="link link-hover text-[#FFFFFF99] font-medium">Private Lesson</a>
             <a class="link link-hover text-[#FFFFFF99] font-medium">Hockeys for Kids</a>
             <a class="link link-hover text-[#FFFFFF99] font-medium">Hockeys for Adult</a>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>
