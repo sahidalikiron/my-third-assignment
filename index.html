@@ -13,6 +13,12 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/a3a08a1e4a.js" crossorigin="anonymous"></script>
 
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- tailwind custom colors -->
     <script>
         tailwind.config = {
@@ -25,10 +31,320 @@
             }
         }
     </script>
+
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-manrope">
+    <!-- header section -->
+    <header>
+        <section class="container px-4 lg:max-w-6xl my-5 lg:mx-auto">
+            <div class="carousel rounded-2xl w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div>
+        </section>
+    </header>
 
+    <!-- main section -->
+    <main>
+        <!-- professional hockeys section -->
+        <section class="max-w-6xl mx-auto lg:py-20">
+            <div class="text-center px-4 lg:px-52">
+                <h2 class="text-3xl lg:text-4xl font-extrabold mb-3">Professional Hockeys Club</h2>
+                <p class="font-medium text-[#13131899]">Prior to tonight’s Westie Sharks vs Blades game, students from
+                    WHHS brought attention to Morgan’s Message. </p>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-between items-center mx-8 my-8">
+                <div class="text-center pb-5 w-60">
+                    <div class="radial-progress text-[#FF4240] mb-3" style="--value:87;" role="progressbar">
+                        <p class="text-black text-2xl font-extrabold">87%</p>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Prayer Facility</h4>
+                    <p class="text-[#13131899]">Multi faith room for prayer and quiet contemplation.</p>
+                </div>
+                <div class="text-center w-60">
+                    <div class="radial-progress text-[#49D293] mb-3" style="--value:95;" role="progressbar">
+                        <p class="text-black p-7 text-2xl font-extrabold">95%</p>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Experienced Coach</h4>
+                    <p class="text-[#13131899]">Recommending on how the program improvised.</p>
+                </div>
+                <div class="text-center py-5 w-60">
+                    <div class="radial-progress text-[#FFB546] mb-3" style="--value:90;" role="progressbar">
+                        <p class="text-black p-7 text-2xl font-extrabold">90%</p>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Senior Player</h4>
+                    <p class="text-[#13131899]">Be prepared to work smarter than you will go places.
+
+                    </p>
+                </div>
+                <div class="text-center w-60">
+                    <div class="radial-progress text-[#4C8DF1] mb-3" style="--value:80;" role="progressbar">
+                        <p class="text-black p-7 text-2xl font-extrabold">80%</p>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-3">Training Ground</h4>
+                    <p class="text-[#13131899]">We do our best to ensure that our photos are as true. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Sections -->
+        <section class="px-4 lg:max-w-6xl lg:mx-auto">
+            <div class="text-center px-4 lg:px-52">
+                <h2 class="text-3xl lg:text-4xl font-extrabold mb-3">Program Sections</h2>
+                <p class="text-[#13131899]">For many, the jump from a Learn to Play program to in-house hockey can be a
+                    big one and that's where the Sharks Play On program comes in!</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-4">
+                <div
+                    class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/2.png)]  bg-no-repeat py-12 lg:py-20 px-10 my-5 h-80 rounded-2xl">
+                    <h3 class="text-2xl lg:text-3xl text-white font-extrabold">Junior Program</h3>
+                    <p class="text-white font-medium py-5">This program is for players that attend Lincoln Schools
+                        in Grades 6 through Jr Warriors teams participate in the Valley
+                        Hockey League Middle School League.</p>
+                    <button class="bg-[#FF4240] text-white text-xl font-bold rounded-lg p-3">Register Now!</button>
+                </div>
+                <div
+                    class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/3.png)] bg-no-repeat py-14 lg:py-20 px-10 my-5 h-80 rounded-2xl">
+                    <h3 class="text-2xl lg:text-3xl text-white font-extrabold">Teenager Program</h3>
+                    <p class="text-white font-medium py-5">Our programs are designed to enable hockey players and
+                        skaters to develop their individual skills in a fun and rewarding environment.</p>
+                    <button class="bg-[#FF4240] text-white text-xl font-bold rounded-lg p-3">Register Now!</button>
+                </div>
+
+            </div>
+            <div
+                class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/4.png)] bg-no-repeat py-14 lg:py-20 pl-10 lg:pr-[550px] h-80 rounded-2xl">
+                <h3 class="text-2xl lg:text-3xl text-white font-extrabold">Professional Program</h3>
+                <p class="text-white font-medium py-5">Hockey is for Everyone uses the game of hockey - and the
+                    NHL's global influence - to drive positive social change and foster more inclusive communities.
+                </p>
+                <button class="bg-[#FF4240] text-white text-xl font-bold rounded-lg p-3">Register Now!</button>
+            </div>
+        </section>
+
+        <!-- clients question section -->
+        <section class="px-4 lg:max-w-6xl lg:mx-auto lg:py-24">
+            <div class="text-center px-4 lg:px-52">
+                <h2 class="text-3xl lg:text-4xl font-extrabold mb-3">Clients Question</h2>
+                <p class="text-[#13131899] py-4">Currently, Hockey Revolution doesn’t offer such an option. Our couriers
+                    allow only one address for one order</p>
+            </div>
+            <div class="flex flex-col lg:flex-row  gap-10 border p-8 rounded-2xl">
+                <div>
+                    <img class="lg:h-[450px]" src="./Images/11.png" alt="">
+                </div>
+                <div class="grid gap-1">
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]"> Practice jerseys can help keep your game jerseys in great shape
+                                every time the puck drops.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[590px] ml-3 h-[1px] bg-[#13131A1A]"></div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">Practice jerseys can help keep your game jerseys in great shape
+                                every time the puck drops.</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[590px] ml-3 h-[1px] bg-[#13131A1A]"></div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">Practice jerseys can help keep your game jerseys in great shape
+                                every time the puck drops.</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[590px] ml-3 h-[1px] bg-[#13131A1A]"></div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">Practice jerseys can help keep your game jerseys in great shape
+                                every time the puck drops.</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[590px] ml-3 h-[1px] bg-[#13131A1A]"></div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Booking
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">Practice jerseys can help keep your game jerseys in great shape
+                                every time the puck drops.</p>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[590px] ml-3 h-[1px] bg-[#13131A1A]"></div>
+
+                    <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title text-xl font-bold">
+                            Pricings
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-[#13131899]">Hello</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- get in touch section -->
+        <section class="px-4 lg:max-w-6xl lg:mx-auto">
+            <div class="text-center px-4 lg:px-52">
+                <h2 class="text-3xl lg:text-4xl font-extrabold mb-3">Get In Touch</h2>
+                <p class="text-[#13131899] py-4">Over the past three months I've emailed them, texted their number from
+                    their website, and have called them numerous times.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-center gap-6">
+                <div class="border p-4 lg:p-8 rounded-2xl">
+                    <div class="bg-[#BCED6D1A] lg:w-80 rounded-2xl p-8">
+                        <img src="./Images/Group 1171275317.png" alt="">
+                        <p class="text-[#13131866]">Phone Number : <br>
+                            <span class="text-xl text-[#131318] font-extrabold">(+62) 123-321-543</span>
+                        </p>
+                    </div>
+                    <div class="bg-[#FDDD5F1A] lg:w-80 rounded-2xl my-5 p-8">
+                        <img src="./Images/Group 1171275318.png" alt="">
+                        <p class="text-[#13131866]">Email : <br>
+                            <span class="text-xl text-[#131318] font-extrabold">hockeys@support.com</span>
+                        </p>
+                    </div>
+                    <div class="bg-[#629CF31A] lg:w-80 rounded-2xl p-8">
+                        <img src="./Images/Group 1171275321.png" alt="">
+                        <p class="text-[#13131866]">Location : <br>
+                            <span class="text-xl text-[#131318] font-extrabold">152/1 Mohakhali Wireless Gate</span>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div  class="grid lg:grid-cols-2 gap-6">
+                        <div>
+                            <label class="text-xl font-bold" for="">Your Name</label><br>
+                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2" type="text" placeholder="Enter your full name">
+                        </div>
+                        <div>
+                            <label class="text-xl font-bold" for="">Your Email</label><br>
+                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2" type="email" placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label class="text-xl font-bold" for="">Subject</label><br>
+                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2" type="text" placeholder="Enter your subject">
+                        </div>
+                        <div>
+                            <label class="text-xl font-bold" for="">Phone Number</label><br>
+                            <input class="bg-[#13131808] w-[100%] lg:w-80 rounded-xl p-5 mt-2 mb-4" type="text" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-xl font-bold" for="">Message</label><br>
+                        <textarea class="bg-[#13131808] w-[100%] lg:w-[670px] rounded-xl p-5 mt-2" name="" placeholder="Write your message" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <button class="btn bg-[#FF4240] w-[100%] lg:w-[670px] text-white  text-xl font-bold mt-4">Send Message</button>
+                </div>
+            </div>
+            <div class="my-12 text-center bg-[#13131808] py-9 rounded-xl">
+                <h4 class="text-2xl font-extrabold">Social Media</h4>
+                <div class="flex justify-center gap-4 mt-4">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer section -->
+    <footer class="flex  justify-between flex-col lg:flex-row p-10 flex bg-[#131318]">
+        <div>
+            <h3 class="text-white text-3xl font-extrabold">Get In Touch</h3>
+            <p class="text-[#FFFFFF99] my-3 font-medium">Over the past three months I've emailed them,<br> texted their number from their website,<br> and have called them numerous times.</p>
+            <p class="flex items-center gap-2 text-[#FFFFFF99] font-medium"><i class="fa-regular fa-envelope text-red-600"></i>hockeys@support.com</p>
+            <p class="flex items-center gap-2 text-[#FFFFFF99] font-medium"><i class="fa-solid fa-phone text-red-600"></i>(+62) 123-321-543</p>
+        </div> 
+        <div class="flex justify-center gap-12 mt-3 lg:gap-40 flex-row">
+            <div class="flex flex-col">
+                <h3 class="text-white text-lg font-bold">Company</h3> 
+              <a class="link link-hover text-[#FFFFFF99] font-medium">About Us</a>
+              <a class="link link-hover text-[#FFFFFF99] font-medium">Leadership</a>
+              <a class="link link-hover text-[#FFFFFF99] font-medium">Career</a>
+              <a class="link link-hover text-[#FFFFFF99] font-medium">News & Article</a>
+              <a class="link link-hover text-[#FFFFFF99] font-medium">Legal Notice</a>
+            </div> 
+            <div class="flex flex-col">
+                <h3 class="text-white text-lg font-bold">Support</h3> 
+              <a class="link link-hover text-[#FFFFFF99] font-medium">Help Center</a>
+              <a class="link link-hover text-[#FFFFFF99] font-medium">FAQ</a>
+              <a class="link link-hover text-[#FFFFFF99] font-medium">Ticket </a>
+              <a class="link link-hover text-[#FFFFFF99] font-medium">Contact Us</a>
+            </div>
+        </div> 
+        <div class="flex flex-col pl-[30%] lg:pl-0 mt-3">
+            <h3 class="text-white text-lg font-bold">Services</h3> 
+            <a class="link link-hover text-[#FFFFFF99] font-medium">Academy</a>
+            <a class="link link-hover text-[#FFFFFF99] font-medium">Group Lesson</a>
+            <a class="link link-hover text-[#FFFFFF99] font-medium">Private Lesson</a>
+            <a class="link link-hover text-[#FFFFFF99] font-medium">Hockeys for Kids</a>
+            <a class="link link-hover text-[#FFFFFF99] font-medium">Hockeys for Adult</a>
+        </div>
+      </footer>
 </body>
 
 </html>
